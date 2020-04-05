@@ -55,8 +55,19 @@ header {
     text-align: right;
 }
 
+.two-lines {
+    max-width: 539px;
+    display: block;
+    width:90%;
+    margin:0 auto;
+}
+
 @media (min-width:768px) {
     .whitebox-logo {
         display: block;
     }
+    .two-lines {
+        width:50%;
+    }
 }
+
