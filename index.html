@@ -22,13 +22,11 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="./css/whitebox.css" />
+
     <meta name="theme-color" content="#563d7c" />
 
     <style>
-      main {
-        margin-top: 80px;
-      }
-
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -56,7 +54,6 @@
         margin-left: 0.75rem;
       }
 
-
       .featurette-divider {
         margin: 5rem 0; /* Space out the Bootstrap <hr> more */
       }
@@ -67,7 +64,6 @@
         line-height: 1;
         letter-spacing: -0.05rem;
       }
-
 
       @media (min-width: 40em) {
         /* Bump up size of carousel content */
@@ -91,257 +87,175 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Whitebox</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >О нас <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Первая фича</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Вторая фича</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Третья фича</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 whitebox-email col">E-mail<br/><a href="mailto:sales@whitebox.ru">sales@whitebox.ru</a></div>
+          <div class="col-lg-4 whitebox-logo col"><img src="./img/wb_logo.png" style="max-width: 158px; display: block; margin: 0 auto;"></div>
+          <div class="col-lg-4 whitebox-phone col">Телефон<br/><a href="tel:+74952151264">+7 (495) 215-12-64</a></div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main role="main">
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1>О нас</h1>
-          <p class="lead text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
-            dolores deleniti harum iure delectus exercitationem, et, quas
-            blanditiis facere tempora dolor saepe deserunt perspiciatis odit
-            provident id cumque excepturi quod.
-          </p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Купить</a>
-            <a href="#" class="btn btn-secondary my-2">Узнать больше</a>
-          </p>
-        </div>
-      </section>
-
       <!-- Marketing messaging and featurettes
   ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
       <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
+        <div class="jumbotron text-center jumbotron-marketing">
+          <h1>Коммуникационные решения</h1>
+          <h2>для медицинских представителей</h2>
+          <img src="img/two-lines.png" style="max-width: 539px;display: block;margin:0 auto;">
+          <p>
+            Адаптируем инфраструктуру фармакологических компаний под удалённое общение с рынком
+          </p>
+          <p>
+            <a href="mailto:sales@whitebox.ru" class="btn btn-secondary my-2">Связаться с Whitebox</a>
+          </p>
+        </div>  
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <img src="./img/virus_pic.png" style="max-width: 455px; width:100%;">
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <h2>Объявленные выходные грозят сорванными планами коммуникации с докторами и провизорами, простаивающими полевыми сотрудниками и финансовыми потерями?</h2>
+            <p>Не важно какое CRM/CLM решение вы сейчас используете, работаете ли вы с интерактивными презентациями или с бумажными детелейтами.</p>
+            <p>С Whitebox вы можете продолжить свое взаимодействие со специалистами фарма-отрасли даже во время самоизоляции</p>
+            <p class="statement">Whitebox за три дня решает проблему вынужденного простоя полевых сотрудников.</p>
+          </div>
+        </div>
+        <div class="jumbotron text-center">
+          <h1>Что мы успеем сделать за три дня?</h1>
+          <h2>За три дня вы возобновите свою промоционную активность вне зависимости  от местонахождения медицинских представителей.</h2>
+        </div>
         <div class="row">
           <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-            <h2>Заголовок</h2>
-            <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >Подробнее &raquo;</a
-              >
-            </p>
+            <img src="img/ico_digitization.png" style="width:50%;max-width: 160px;margin:0 auto;display: block;">
+            <p class="strike-top">Переведем ваши презентационные материалы на цифровую платформу <br/>
+              (оцифруем бумажные, либо адаптируем интерактивные) </p>
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-            <h2>Заголовок</h2>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >Подробнее &raquo;</a
-              >
-            </p>
+            <img src="img/ico_video-conference.png" style="width:50%;max-width: 160px;margin:0 auto;display: block;">
+            <p class="strike-top">Развернем решение для удаленного взаимодействия <br/>
+              (не важно, какую платформу вы решите использовать iOS/Android/Web) </p>
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-            <h2>Заголовок</h2>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >Подробнее &raquo;</a
-              >
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              Первая фича
-              <span class="text-muted">Крутая</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <img src="img/ico_conversation.png" style="width:50%;max-width: 160px;margin:0 auto;display: block;">
+            <p class="strike-top">Подготовим тренинговые материалы  и обучим ваш sales force</p>
           </div>
         </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Вторая фича
-              <span class="text-muted">Ещё круче</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+        <div class="row" style="background-image: url(./img/pic3.png);background-repeat: no-repeat; background-size: 455px auto; background-position:15px 0;">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-9">
+            <h1>Что вы получите</h1>
+            <h2>Дистанционное общение под ключ</h2>
+            <p>Весь необходимый софт, уже адаптированный под устройства ваших мед. представителей (планшеты на iOS или Android, ноутбуки)</p>
+            <p>Организацию и предоставление серверной инфраструктуры. Вам не нужно ничего настраивать, всё уже готово</p>
+            <p>Адаптацию ваших промо-материалов для удалённых визитов. Что бы вы ни использовали сейчас — html-презентации, PowerPoint или бумажные буклеты — мы быстро переведём ваши материалы в формат, подходящий для дистанционного взаимодействия</p>
+            <p>Обучение пользователей. Онлайн тренинги для ваших сотрудников</p>
+            <p>Службу поддержки первой линии работающую с 5 утра до 20 вечера по МСК. Мы будем доступны для вопросов каждый день</p>
+            <p>И всё это — за три дня!</p>
           </div>
         </div>
-
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">
-              Иииииии третья фича <span class="text-muted">Просто космос</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
-            </p>
+        <div class="row" style="padding-top:15px;">
+          <div class="col-lg-7 col-md-6">
+            <h1>Адаптируем наши решения</h1>
+            <h2>под потребности вашей компании</h2>
+            <p>Вы не платите за покупку решения и вам не нужно согласовывать  это с закупками и IT – мы предлагаем услуги и уже готовый софт SaaS</p>
+            <p class="statement">Мы предлагаем гибкий инструмент подстраивающийся под ваши маркетинговые цели:</p>
+            <p>Настроим проведение очных и заочных визитов </p>
+            <p>Обеспечим докторам возможность самостоятельного изучения ваших материалов </p>
+            <p>Развернём омниканальную кампанию.</p>
           </div>
-          <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+          <div class="col-lg-5 col-md-6">
+            <img src="./img/pic4.png" style="max-width: 455px; width:100%;">
           </div>
         </div>
-
-        <hr class="featurette-divider" />
-
-        <!-- /END THE FEATURETTES -->
+        <div class="jumbotron text-center">
+          <h1>Мы профессионально занимаемся решениями для фармацевтических компаний с 2003 года</h1>
+          <p>Мы имеем опыт с перечень систем и сделали уже 100500 слайдов для фарма компаний в 100500 стран. Мы профессионалы не только в разработке CRM решений но и имеем маркетинговые компетенции и опыт разработки интерактивных материалов с 2006 года
+          </p>
+        </div>
+        <div class="row">
+          <h2 style="display:block;text-align: center;width:100%;">Наши клиенты</h2>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame8.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame9.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame10.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame11.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame12.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame13.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame14.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame15.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame16.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame17.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame18.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame19.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame20.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame21.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame22.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame23.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame24.png" class="customer-logo-image">
+          </div>
+          <div class="col-lg-2 customer-logo">
+            <img src="./img/customers/frame25.png" class="customer-logo-image">
+          </div>
+        </div>
+        <div class="row" style="background-image: url(./img/pic6.png);background-repeat: no-repeat; background-size: 455px auto; background-position:15px 0;">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-9">
+            <h1>Как мы работаем</h1>
+            <img src="img/two-lines.png" style="max-width: 539px;">
+            <p>Напишите или позвоните нам</p>
+            <p>Мы подпишем соглашение о неразглашении, чтобы вы были уверены в конфиденциальности нашего взаимодействия</p>
+            <p>Присылайте нам:<br/>
+              материалы, которые хотите использовать в удалённых визитах<br/>
+              структуру подчинения ваших сотрудников, которые будут задействованы в проекте. <br/>
+              Это нужно, чтобы мы могли настроить роли и зоны ответственности
+            </p>
+            <p>Согласовываем стоимость, запускаем подписание договора</p>
+            <p>Мы разворачиваем для вас инфраструктуру, приложение и адаптируем материалы. Над этим параллельно работают три команды, поэтому всё происходит быстро</p>
+            <p>Проводим обучение</p>
+            <h2>Ваш Sales Force снова в строю! А мы на связи с 5:00 до 20:00 чтобы ответить на любые вопросы и обеспечить максимально гладкий переход к новому формату работы.</h2>
+          </div>
+        </div>
+        <div class="jumbotron text-center">
+          <p>
+            <a href="mailto:sales@whitebox.ru" class="btn btn-secondary my-2">Связаться с Whitebox</a>
+          </p>
+        </div>
       </div>
       <!-- /.container -->
 

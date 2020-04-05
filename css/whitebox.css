@@ -1,0 +1,62 @@
+.jumbotron {
+    background-color: white;
+    padding: 0;
+}
+
+.jumbotron-marketing {
+    background-image: url(../img/cover_bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 2rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.strike-top {
+    margin-top:10px;
+    border-top: solid 1px black;
+}
+
+.statement {
+    background-color: #FECDC9;
+    font-size:24px;
+}
+
+.customer-logo {
+    margin-bottom:24px;
+}
+
+.customer-logo-image {
+    max-width: 160px; 
+    width:100%; 
+    display: block;
+    margin:0 auto;
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    margin: 15px 0;
+}
+
+.whitebox-email {
+
+}
+
+.whitebox-logo {
+    display: none;
+}
+
+.whitebox-phone {
+    text-align: right;
+}
+
+@media (min-width:768px) {
+    .whitebox-logo {
+        display: block;
+    }
+}
